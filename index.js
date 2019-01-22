@@ -54,7 +54,8 @@ function* run() {
     hostname = `${commander.host}`;
   }
   else {
-    hostname = isWin ? os.hostname() : 'localhost';
+    //hostname = isWin ? os.hostname() : 'localhost';
+    hostname = '127.0.0.1';
   }
   let mongod;
   let mongo;
